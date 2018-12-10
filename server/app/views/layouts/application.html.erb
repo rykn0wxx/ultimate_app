@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" class="rykn0wxx no-js">
+  <head>
+    <%= render 'shared/head' %>
+  </head>
+
+  <body class="layout-row">
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <%#= render "shared/flash" %>
+    <%#= render "shared/side" if show_sidebar? %>
+
+    <section id="app" class="layout-column flex" tabindex="-1">
+      <%#= render "shared/topbar" if show_topbar? %>
+      <main-app>
+        <%= yield %>
+      </main-app>
+    </section>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', 'data-turbolinks-suppress-warning': 'true' %>
+  </body>
+</html>

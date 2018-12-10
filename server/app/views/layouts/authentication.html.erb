@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" class="rykn0wxx no-js">
+  <head>
+    <%= render 'shared/head' %>
+  </head>
+
+  <body class="authentication layout-row">
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <%#= render "shared/flash" %>
+    <%#= render "shared/side" if show_sidebar? %>
+
+    <section id="app" class="wrapper">
+
+      <%#= render "shared/topbar" if show_topbar? %>
+
+			<main-auth>
+        <%= yield %>
+      </main-auth>
+      
+    </section>
+
+    <%= javascript_pack_tag 'authentication', 'data-turbolinks-track': 'reload', 'data-turbolinks-suppress-warning': 'true' %>
+  </body>
+</html>
