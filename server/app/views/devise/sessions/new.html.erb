@@ -10,6 +10,8 @@
 		</p>
 		<div class="row">
 			<%= simple_form_for resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => "md-form col s12", :novalidate => true}  do |f| %>
+				<%#= f.input :login, :required => true, :input_html => { :autocomplete => "off", :autofocus => false, :hint => false }, :icon => "person_outline", :wrapper_html => { :class => "md-icon-float md-icon-left" } %>
+				
 				<md-form-group
 					input-icon="person_outline"
 					input-label="Login"
@@ -24,6 +26,7 @@
 					input-name="user[password]"
 					input-id="user_password">
 				</md-form-group>
+				
 				<div class="form-actions">
 					<%= f.button :button, :class => "md-button" do %>
 					  Submit

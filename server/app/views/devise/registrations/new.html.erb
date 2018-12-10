@@ -1,0 +1,52 @@
+<% title "Registration", false, false %>
+
+<div class="auth-box flex md-content layout-column" md-scroll-y>
+	<div class="auth-card md-whiteframe-10dp">
+		<div class="auth-logo">
+			<%= inline_svg("logo.svg", :class => "logo") %>
+		</div>
+		<p class="auth-msg">
+			Register as new user.
+		</p>
+		<div class="row">
+			<%= simple_form_for resource, :as => resource_name, :url => registration_path(resource_name), :html => { :class => "md-form col s12", :novalidate => true}  do |f| %>
+				<md-form-group
+					input-icon="email"
+					input-label="Email"
+					input-type="email"
+					input-name="user[email]"
+					input-id="user_email">
+				</md-form-group>
+				<md-form-group
+					input-icon="person"
+					input-label="Username"
+					input-type="username"
+					input-name="user[username]"
+					input-id="user_username">
+				</md-form-group>
+				<md-form-group
+					input-icon="lock"
+					input-label="Password"
+					input-type="password"
+					input-name="user[password]"
+					input-id="user_password">
+				</md-form-group>
+				<md-form-group
+					input-icon="lock"
+					input-label="Password Confirmation"
+					input-type="password"
+					input-name="user[password_confirmation]"
+					input-id="user_password_confirmation">
+				</md-form-group>
+				<div class="form-actions">
+					<%= f.button :button, :class => "md-button" do %>
+					  Submit
+					<% end %>
+				</div>
+			<% end %>
+		</div>
+		<div class="row external-actions">
+			<%= render "devise/shared/links" %>
+		</div>
+	</div>
+</div>

@@ -1,7 +1,7 @@
 {
-  "application.js": "/packs/application-d396ba8bbe16fed8a1fb.js",
-  "application.js.map": "/packs/application-d396ba8bbe16fed8a1fb.js.map",
-  "authentication.js": "/packs/authentication-d396ba8bbe16fed8a1fb.js",
-  "authentication.js.map": "/packs/authentication-d396ba8bbe16fed8a1fb.js.map",
+  "application.js": "/packs/application-b09c84eede7567c74aec.js",
+  "application.js.map": "/packs/application-b09c84eede7567c74aec.js.map",
+  "authentication.js": "/packs/authentication-b09c84eede7567c74aec.js",
+  "authentication.js.map": "/packs/authentication-b09c84eede7567c74aec.js.map",
   "src/img/login.jpg": "/packs/src/img/login-c7bce6c8a74bda41b952f9a1026e4f38.jpg"
 }
